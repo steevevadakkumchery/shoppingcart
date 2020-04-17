@@ -20,6 +20,11 @@ function getNumber() {
     }
   }
 }
+app.get('/', (req, res) => {
+  res.status(200)
+  res.write('hello')
+  res.end()
+})
 
 app.get('/numbers', (req, res) => {
   res.status(200)
